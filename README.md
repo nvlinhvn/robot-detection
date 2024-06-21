@@ -35,14 +35,15 @@ We can approximately extract the product category feature from url by topic mode
 
 ![Topic Modeling](./img/topic_modeling.png)
 
-Now, with the new feature (topic), we can check association and correlation:
-
-![Association](./img/crammer_V_heatmap.png)
 
 * Each bubble represents a topic. The area of these topic bubles is proportional to the amount of words that belong to each topic across the dictionary. The bubles are plotted using a multidimensional scaling algorithm (dimensional reduction) based on the words they comprise, so topics that are closer together have more words in common.
 * Blue bars represent the overall frequency of the term across the entire corpus. Salient is a specific metric for topic identity. Higher saliency values indicate that a word is more useful for identifying a specific topic. 
 * Red bars estimate frequency of the term in a selected topic
 * Relevance aims to highlight terms that are not only important within a specific topic but also distinctive to that topic compared to their general frequency in the corpus.
+
+Now, with the new feature (topic), we can check association and correlation:
+
+![Association](./img/crammer_V_heatmap.png)
 
 * We see obvisouly location features are the most predictive here, to distinguish between Robots and nonRobots
 * `product_topic` has the highest entropy (least predictive), but it's noted it also means there's some improvement needed in text and topic modeling
