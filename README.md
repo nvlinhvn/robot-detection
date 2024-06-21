@@ -54,3 +54,18 @@ Now, with the new feature (topic), we can check Crammers' V-based association an
 For simplicity, the data were split into train/test data before modeling, assuming all columns/features are still the same in the test set. However it's noted some corner cases which can happen in reality, e.g.:
 * There're new countries/regions in the test set which are unavailable in the training set
 * Or new product categories in the test set
+
+We'll compare 2 models: KNN vs Random Forest
+
+### KNN Classifier
+
+![knn_kpi](./img/knn_metrics.png)
+
+* KNN (k = 5) provides a deterministic values as it essentially returns the fraction of neighbors in each class.
+* In most cases, the predicted probabilities are influenced by the class labels of the k nearest neighbors, and in many cases, there is a clear majority class among the neighbors.
+* Although AUC of precision-recall curve and ROC curves and KS stat are high, the score of 0.96 (in KS) can be observed as the difference between the two classes of predictions, along the x axis at 60% of sample. As can be seen, this distance only occurs for up to ~60% of the data, since the maximum separation starts at a threshold of 0.6, along the x axis, but then decreasing immediately afterwards. 
+
+![knn_kpi_2](./img/knn_metrics_extra.png)
+
+
+### Random Forest Classifier
