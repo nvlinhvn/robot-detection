@@ -54,3 +54,12 @@ Now, with the new feature (topic), we can check Crammers' V-based association an
 For simplicity, the data were split into train/test data before modeling, assuming all columns/features are still the same in the test set. However it's noted some corner cases which can happen in reality, e.g.:
 * There're new countries/regions in the test set which are unavailable in the training set
 * Or new product categories in the test set
+
+We'll compare 2 models: KNN vs Random Forest
+
+### KNN
+
+![knn_kpi](./img/knn_metrics.png)
+![knn_kpi_2](./img/knn_metrics_extra.png)
+
+
