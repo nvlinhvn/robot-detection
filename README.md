@@ -41,7 +41,7 @@ We can approximately extract the product category feature from url by topic mode
 * Red bars estimate frequency of the term in a selected topic
 * Relevance aims to highlight terms that are not only important within a specific topic but also distinctive to that topic compared to their general frequency in the corpus.
 
-Now, with the new feature (topic), we can check association and correlation:
+Now, with the new feature (topic), we can check Crammers' V-based association and correlation:
 
 ![Association](./img/crammer_V_heatmap.png)
 
