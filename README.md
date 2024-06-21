@@ -32,9 +32,11 @@ First, we visualize top keywords frequency from URL.
 * We noted there're some distinction in product keywords between Robot and non-Robot. Traffic from Robot focuses on general, book or language topics, while traffic driven by non-Robot would center around ajax, or sports
 
 We can approximately extract the product category feature from url by topic modeling using Latent Dirichlet Allocation, divided into 10 different product topics. The assumption is that bot/robot browsing are only interested in some specific products.
+
 ![Topic Modeling](./img/topic_modeling.png)
 
 Now, with the new feature (topic), we can check association and correlation:
+
 ![Association](./img/crammer_V_heatmap.png)
 
 * Each bubble represents a topic. The area of these topic bubles is proportional to the amount of words that belong to each topic across the dictionary. The bubles are plotted using a multidimensional scaling algorithm (dimensional reduction) based on the words they comprise, so topics that are closer together have more words in common.
