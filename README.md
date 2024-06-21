@@ -21,7 +21,7 @@ The aim is to identify the type of traffic we see coming onto our servers.
 
 # Approach
 
-![flowchart](./img/flowchart.png)
+![flowchart](./img/flowchart.jpg)
 
 ## Simple Feature Engineering
 
