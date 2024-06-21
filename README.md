@@ -41,7 +41,7 @@ We can approximately extract the product category feature from url by topic mode
 * Red bars estimate frequency of the term in a selected topic
 * Relevance aims to highlight terms that are not only important within a specific topic but also distinctive to that topic compared to their general frequency in the corpus.
 
-Now, with the new feature (topic), we can check Crammers' V-based association and correlation:
+Now, with the new feature (topic), we can check Crammers' V-based association and entropy analysis:
 
 ![Association](./img/crammer_V_heatmap.png)
 
@@ -86,3 +86,11 @@ We'll compare 2 models: KNN vs Random Forest
 * In calibration, the model deviates from perfect calibration, showing some overconfidence in its predictions.
 
 In general, Random Forest shows slightly better overall performance, particularly in terms of calibration and prediction confidence. It appears to handle the class imbalance more effectively, making it the preferable choice for this specific classification task.
+
+![rf feature importance](./img/rf_feature_importance.png)
+
+* As expected, the most importance predictive feature is the location of traffic (country_region). We simply suspect Robot or non-Robot based on its location
+
+# SUMMARY AND CONCLUSIONS
+
+![rf feature importance](./img/rf_feature_importance.png)
