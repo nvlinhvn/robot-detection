@@ -69,3 +69,10 @@ We'll compare 2 models: KNN vs Random Forest
 
 
 ### Random Forest Classifier
+
+![rf_kpi](./img/rf_metrics.jpg)
+
+* Random forest has more wide range of prediction probability
+* The maximum separation distance between 2 classes is 0.96, at the 30%th of sample, covering for ~70% of data, and also works better with bottom 40% of data compared with kNN
+
+![rf_kpi_2](./img/rf_metrics_extra.jpg)
