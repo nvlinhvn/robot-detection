@@ -9,7 +9,7 @@ The aim is to identify the type of traffic we see coming onto our servers.
 
 # Data Overview
 
-![Data Overview](./img/data_overview.png)
+![Data Overview](./img/data_overview.jpg)
 
 * Robot accounts for ~70% of traffic
 * Traffic from California of USA accounts for ~70% of traffic
