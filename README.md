@@ -88,7 +88,7 @@ We'll compare 2 models: KNN vs Random Forest
 
 In general, Random Forest shows slightly better overall performance, particularly in terms of calibration and prediction confidence. It appears to handle the class imbalance more effectively, making it the preferable choice for this specific classification task.
 
-![rf feature importance](./img/rf_feature_importance.png)
+![rf feature importance](./img/rf_feature_importance.jpg)
 
 * As expected, the most importance predictive feature is the location of traffic (country_region). We simply suspect Robot or non-Robot based on its location
 
