@@ -15,7 +15,7 @@ The aim is to identify the type of traffic we see coming onto our servers.
 * Traffic from California of USA accounts for ~70% of traffic
 * Most traffics (> 80%) are anonymized
 * Data are only available from 20-22 for 1 day, and also we don't know when the session ends, so it's unlikely time feature (or seasonality) plays an important role here
-* >95% traffic comes from Browsers and Robots, we can simplify the multi-label classification problem into binary classication between Robots vs. non-Robots. Any multi-label classication problem can be divided into multiple binary classification anyway, with one vs.rest strategy
+* > 95% traffic comes from Browsers and Robots, we can simplify the multi-label classification problem into binary classication between Robots vs. non-Robots. Any multi-label classication problem can be divided into multiple binary classification anyway, with one vs.rest strategy
 * The class Robot/non-Robot is imbalance ~0.6/1, so it's imbalance binary classification
 * It seems there're 3 consistent features: country, region, and visitor recognition type. In fact, country and region can be combined into 1 feature e.g. place
 
