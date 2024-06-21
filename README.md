@@ -47,7 +47,7 @@ Now, with the new feature (topic), we can check Crammers' V-based association an
 
 * We see obvisouly location features are the most predictive here, to distinguish between Robots and nonRobots
 * `product_topic` has the highest entropy (least predictive), but it's noted it also means there's some improvement needed in text and topic modeling
-* It is obvious place and robots are highly associated. This means, e.g. if a traffic is from US_CA, it's highly likely Robot traffic
+* It is obvious place and robots are highly associated. This means, e.g. if a traffic is from `US_CA`, it's highly likely Robot traffic
 * There's no strong evidence and association that Robot only targets some specific product
 
 ## Modeling
