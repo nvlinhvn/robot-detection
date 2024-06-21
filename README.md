@@ -60,7 +60,7 @@ We'll compare 2 models: KNN vs Random Forest
 
 ### KNN Classifier
 
-![knn_kpi](./img/knn_metrics.png)
+![knn_kpi](./img/knn_metrics.jpg)
 
 * KNN (k = 5) provides a deterministic values as it essentially returns the fraction of neighbors in each class.
 * In most cases, the predicted probabilities are influenced by the class labels of the k nearest neighbors, and in many cases, there is a clear majority class among the neighbors.
