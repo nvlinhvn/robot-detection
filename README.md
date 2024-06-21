@@ -49,6 +49,7 @@ Now, with the new feature (topic), we can check Crammers' V-based association an
 * `product_topic` has the highest entropy (least predictive), but it's noted it also means there's some improvement needed in text and topic modeling
 * It is obvious place and robots are highly associated. This means, e.g. if a traffic is from `US_CA`, it's highly likely Robot traffic
 * There's no strong evidence and association that Robot only targets some specific product
+* Since random forest scikit-learn does not deal with categorical string, we would encode categories like `visitor_recognition_type` or `place` by traffic frequency
 
 ## Modeling
 For simplicity, the data were split into train/test data before modeling, assuming all columns/features are still the same in the test set. However it's noted some corner cases which can happen in reality, e.g.:
@@ -93,4 +94,9 @@ In general, Random Forest shows slightly better overall performance, particularl
 
 # SUMMARY AND CONCLUSIONS
 
-![rf feature importance](./img/rf_feature_importance.png)
+![rf feature importance](./img/Model_Comparison.png)
+
+* It suggests that the Random Forest model captures the differences in a larger portion of the dataset (which aggregates predictions from multiple trees, might capture broader patterns and allowing it to identify more generalized patterns). One could argue that the Random Forest model is better at distinguishing between the predicted and true distributions across a broader range, while kNN is sensitive to outliers/noiser and local pattern
+* kNN likely suffers a lot when the imbalance class is more serious
+* One-hot encoding sparsed the data which can hurt distance-based algorithm like kNN, also the curse of dimensionality
+* Obviously there're some needed improvement for product topic modeling, or we could have sort of category in the ad database 
