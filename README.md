@@ -67,12 +67,22 @@ We'll compare 2 models: KNN vs Random Forest
 
 ![knn_kpi_2](./img/knn_metrics_extra.png)
 
+* The model (both Class 0 and Class 1) significantly outperforms the baseline lift.
+* Class 1 shows better performance than Class 0, reaching maximum gain faster.
+* In calibration, the model deviates from perfect calibration, showing some overconfidence in its predictions.
+
 
 ### Random Forest Classifier
 
 ![rf_kpi](./img/rf_metrics.jpg)
 
-* Random forest has more wide range of prediction probability
-* The maximum separation distance between 2 classes is 0.96, at the 30%th of sample, covering for ~70% of data, and also works better with bottom 40% of data compared with kNN
+* With lower weighted log loss, random forest indicates more confident and accurate predictions, or more wide range of prediction probability
+* The maximum separation distance between 2 classes is 0.96, at the 30%th of sample, covering for ~70% of data, and also works better with bottom 40% of data compared with kNN. Reaching maximum KS statistic earlier than kNN suggests it separates classes more efficiently.
 
 ![rf_kpi_2](./img/rf_metrics_2.jpg)
+
+* Similar to KNN, model (both Class 0 and Class 1) significantly outperforms the baseline.
+* Class 1 shows better performance than Class 0, reaching maximum gain faster.
+* In calibration, the model deviates from perfect calibration, showing some overconfidence in its predictions.
+
+In general, Random Forest shows slightly better overall performance, particularly in terms of calibration and prediction confidence. It appears to handle the class imbalance more effectively, making it the preferable choice for this specific classification task.
